@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Global Trade Exchange</title>
+    <meta name="description"
+        content="Get in touch with Global Trade Exchange. Reach our offices worldwide or send us a message — we'd love to hear from you.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">G</div> Global<span>Trade</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+                <a href="membership.html">Plans</a><a href="contact.html" class="active">Contact</a><a
+                    href="dashboard.html">Dashboard</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-sm btn-outline" onclick="openModal('login')">Login</button>
+                <button class="btn btn-sm btn-gold" onclick="openModal('register')">Get Started</button>
+                <button class="hamburger" id="hamburgerBtn"
+                    aria-label="Open menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose">&times;</button>
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+        <a href="membership.html">Plans</a><a href="contact.html">Contact</a><a href="dashboard.html">Dashboard</a>
+        <button class="btn btn-gold" onclick="openModal('login')">Login</button>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Contact Us</span></div>
+        <h1>Contact <span class="text-gold">Us</span></h1>
+        <p>Have questions, partnership inquiries, or need support? We'd love to hear from you.</p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div>
+                    <span class="section-label">Get In Touch</span>
+                    <h2 style="margin-bottom: 8px;">Let's Start a <span class="text-gold">Conversation</span></h2>
+                    <p class="text-muted" style="margin-bottom: 32px;">Our team is available Monday–Friday, 9 AM to 6 PM
+                        (GMT+5:30). We typically respond within 24 hours.</p>
+
+                    <div class="contact-info-cards">
+                        <div class="contact-info-card animate-on-scroll">
+                            <div class="contact-info-icon"><i class="fas fa-location-dot"></i></div>
+                            <div>
+                                <h4>Head Office</h4>
+                                <p>Tower B, 12th Floor, Trade Center<br>Bandra Kurla Complex, Mumbai 400051, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card animate-on-scroll">
+                            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info@globaltradeexchange.com<br>support@globaltradeexchange.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card animate-on-scroll">
+                            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+91 22 4000 5000 (India)<br>+1 646 800 3000 (US)</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card animate-on-scroll">
+                            <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Mon – Fri: 9:00 AM – 6:00 PM IST<br>Premium Support: 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Global offices -->
+                    <h3 style="margin-bottom: 16px; margin-top: 24px;">Global <span class="text-gold">Offices</span>
+                    </h3>
+                    <div class="grid grid-2 gap-16">
+                        <div class="card" style="padding: 20px;">
+                            <h4 style="font-family: 'Inter',sans-serif; margin-bottom: 4px;"><i
+                                    class="fas fa-map-marker-alt text-gold"></i> Dubai</h4>
+                            <p style="font-size: .82rem; color: var(--text-muted);">Dubai Trade Hub, DIFC, UAE</p>
+                        </div>
+                        <div class="card" style="padding: 20px;">
+                            <h4 style="font-family: 'Inter',sans-serif; margin-bottom: 4px;"><i
+                                    class="fas fa-map-marker-alt text-gold"></i> London</h4>
+                            <p style="font-size: .82rem; color: var(--text-muted);">Canary Wharf, London, UK</p>
+                        </div>
+                        <div class="card" style="padding: 20px;">
+                            <h4 style="font-family: 'Inter',sans-serif; margin-bottom: 4px;"><i
+                                    class="fas fa-map-marker-alt text-gold"></i> Singapore</h4>
+                            <p style="font-size: .82rem; color: var(--text-muted);">Marina Bay, Singapore</p>
+                        </div>
+                        <div class="card" style="padding: 20px;">
+                            <h4 style="font-family: 'Inter',sans-serif; margin-bottom: 4px;"><i
+                                    class="fas fa-map-marker-alt text-gold"></i> New York</h4>
+                            <p style="font-size: .82rem; color: var(--text-muted);">Wall Street, NYC, USA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <div class="card animate-on-scroll" style="padding: 40px;">
+                        <h3 style="margin-bottom: 4px;">Send Us a <span class="text-gold">Message</span></h3>
+                        <p class="text-muted" style="margin-bottom: 28px; font-size: .9rem;">Fill out the form below and
+                            we'll get back to you within 24 hours.</p>
+                        <form onsubmit="handleContactSubmit(event)" id="contactForm">
+                            <div class="grid grid-2 gap-16">
+                                <div class="form-group">
+                                    <label class="form-label">First Name *</label>
+                                    <input type="text" class="form-input" placeholder="John" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Last Name *</label>
+                                    <input type="text" class="form-input" placeholder="Doe" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email Address *</label>
+                                <input type="email" class="form-input" placeholder="you@company.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-input" placeholder="+1 (555) 123-4567">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Company Name</label>
+                                <input type="text" class="form-input" placeholder="Your company name">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Subject *</label>
+                                <select class="form-input" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="sales">Sales & Pricing</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Message *</label>
+                                <textarea class="form-input" placeholder="Tell us how we can help you..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-gold" style="width: 100%;">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP PLACEHOLDER -->
+    <section style="background: var(--bg-secondary); padding: 48px 0;">
+        <div class="container">
+            <div
+                style="width:100%; height: 300px; border-radius: var(--radius-lg); background: var(--bg-card); border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 12px; color: var(--text-muted);">
+                <i class="fas fa-map-location-dot" style="font-size: 3rem; color: var(--gold-400);"></i>
+                <p>Interactive Map — Mumbai, India HQ</p>
+                <p style="font-size: .82rem;">Embed your Google Maps iframe here for production</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section-sm">
+        <div class="container">
+            <div class="cta-banner animate-on-scroll">
+                <h2>Stay <span class="text-gold">Updated</span></h2>
+                <p>Subscribe to our newsletter for the latest trade insights, market reports, and platform updates.</p>
+                <div class="newsletter-form" style="margin: 0 auto;">
+                    <input type="email" placeholder="Enter your email address" id="newsletterEmail2">
+                    <button class="btn btn-gold btn-sm" onclick="subscribeFromContact()">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">G</div> Global<span>Trade</span>
+                    </a>
+                    <p>The world's most trusted platform for connecting verified import-export businesses.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Platform</h4><a href="services.html">Services</a><a href="membership.html">Membership</a><a
+                        href="dashboard.html">Dashboard</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4><a href="about.html">About Us</a><a href="#">Careers</a><a
+                        href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4><a href="#">Help Center</a><a href="#">Terms of Service</a><a href="#">Privacy
+                        Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Global Trade Exchange. All rights reserved.</span>
+                <span>Built with <span style="color: var(--gold-400);">♦</span> for global traders</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AUTH MODAL -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3>Welcome Back</h3>
+            <p class="modal-subtitle">Access your Global Trade Exchange account</p>
+            <div class="modal-tabs">
+                <button class="modal-tab active" onclick="switchTab('login')">Login</button>
+                <button class="modal-tab" onclick="switchTab('register')">Register</button>
+            </div>
+            <form id="loginForm" onsubmit="handleAuth(event, 'login')">
+                <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input"
+                        placeholder="you@company.com" required></div>
+                <div class="form-group"><label class="form-label">Password</label><input type="password"
+                        class="form-input" placeholder="Enter password" required></div>
+                <button type="submit" class="btn btn-gold" style="width:100%;">Sign In</button>
+            </form>
+            <form id="registerForm" style="display:none;" onsubmit="handleAuth(event, 'register')">
+                <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-input"
+                        placeholder="John Doe" required></div>
+                <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input"
+                        placeholder="you@company.com" required></div>
+                <div class="form-group"><label class="form-label">Password</label><input type="password"
+                        class="form-input" placeholder="Create password" required></div>
+                <button type="submit" class="btn btn-gold" style="width:100%;">Create Account</button>
+            </form>
+        </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="js/main.js"></script>
+    <script>
+        function subscribeFromContact() {
+            const email = document.getElementById('newsletterEmail2');
+            if (email && email.value.includes('@')) {
+                showToast('Thank you for subscribing! 🎉');
+                email.value = '';
+            } else {
+                showToast('Please enter a valid email address.');
+            }
+        }
+    </script>
+</body>
+
+</html>

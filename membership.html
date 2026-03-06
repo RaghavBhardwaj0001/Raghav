@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Plans — Global Trade Exchange</title>
+    <meta name="description"
+        content="Choose the perfect membership plan for your trade needs. Free, Professional, and Premium tiers with verified leads, analytics, and dedicated support.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">G</div> Global<span>Trade</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+                <a href="membership.html" class="active">Plans</a><a href="contact.html">Contact</a><a
+                    href="dashboard.html">Dashboard</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-sm btn-outline" onclick="openModal('login')">Login</button>
+                <button class="btn btn-sm btn-gold" onclick="openModal('register')">Get Started</button>
+                <button class="hamburger" id="hamburgerBtn"
+                    aria-label="Open menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose">&times;</button>
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+        <a href="membership.html">Plans</a><a href="contact.html">Contact</a><a href="dashboard.html">Dashboard</a>
+        <button class="btn btn-gold" onclick="openModal('login')">Login</button>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Membership Plans</span></div>
+        <h1>Membership <span class="text-gold">Plans</span></h1>
+        <p>Invest in your trade success. Choose a plan that matches your business goals and growth ambitions.</p>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label">Pricing</span>
+                <h2 class="section-title">Simple, Transparent <span class="text-gold">Pricing</span></h2>
+                <p class="section-subtitle">No hidden fees. Cancel anytime. All plans come with a 14-day free trial.</p>
+            </div>
+            <div class="grid grid-3 gap-24">
+                <!-- Free -->
+                <div class="pricing-card animate-on-scroll">
+                    <div class="pricing-label">Free</div>
+                    <div class="pricing-price">$0 <span class="period">/ forever</span></div>
+                    <p class="pricing-desc">Perfect for exploring the platform and basic trade research.</p>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> 10 leads per month</li>
+                        <li><span class="check">✓</span> Basic search filters</li>
+                        <li><span class="check">✓</span> Community forum access</li>
+                        <li><span class="check">✓</span> Email support (48h response)</li>
+                        <li><span class="cross">✗</span> Verified business badge</li>
+                        <li><span class="cross">✗</span> Commission tracking</li>
+                        <li><span class="cross">✗</span> Market analytics</li>
+                        <li><span class="cross">✗</span> Dedicated account manager</li>
+                        <li><span class="cross">✗</span> API access</li>
+                    </ul>
+                    <button class="btn btn-outline" style="width: 100%;" onclick="openModal('register')">Get Started
+                        Free</button>
+                </div>
+                <!-- Professional -->
+                <div class="pricing-card featured animate-on-scroll">
+                    <div class="pricing-popular">Most Popular</div>
+                    <div class="pricing-label">Professional</div>
+                    <div class="pricing-price"><span class="currency">$</span>49 <span class="period">/ month</span>
+                    </div>
+                    <p class="pricing-desc">For serious traders and growing import-export businesses.</p>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> 200 leads per month</li>
+                        <li><span class="check">✓</span> Advanced search & filters</li>
+                        <li><span class="check">✓</span> Verified business badge</li>
+                        <li><span class="check">✓</span> Commission tracking dashboard</li>
+                        <li><span class="check">✓</span> Email support (12h response)</li>
+                        <li><span class="check">✓</span> Basic market reports</li>
+                        <li><span class="check">✓</span> Deal notifications</li>
+                        <li><span class="cross">✗</span> Dedicated account manager</li>
+                        <li><span class="cross">✗</span> API access</li>
+                    </ul>
+                    <button class="btn btn-gold" style="width: 100%;" onclick="openModal('register')">Start 14-Day
+                        Trial</button>
+                </div>
+                <!-- Premium -->
+                <div class="pricing-card animate-on-scroll">
+                    <div class="pricing-label">Premium</div>
+                    <div class="pricing-price"><span class="currency">$</span>149 <span class="period">/ month</span>
+                    </div>
+                    <p class="pricing-desc">Unlimited access with personal support for enterprise needs.</p>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Unlimited verified leads</li>
+                        <li><span class="check">✓</span> AI-powered deal matching</li>
+                        <li><span class="check">✓</span> Premium verified badge</li>
+                        <li><span class="check">✓</span> Advanced commission system</li>
+                        <li><span class="check">✓</span> Full market analytics suite</li>
+                        <li><span class="check">✓</span> Dedicated account manager</li>
+                        <li><span class="check">✓</span> Priority phone support (1h)</li>
+                        <li><span class="check">✓</span> Custom trade reports</li>
+                        <li><span class="check">✓</span> Full API access</li>
+                    </ul>
+                    <button class="btn btn-outline" style="width: 100%;" onclick="openModal('register')">Go
+                        Premium</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label">Comparison</span>
+                <h2 class="section-title">Feature <span class="text-gold">Comparison</span></h2>
+            </div>
+            <div style="overflow-x: auto;">
+                <table class="dash-table" style="min-width: 600px;">
+                    <thead>
+                        <tr>
+                            <th style="text-align: left;">Feature</th>
+                            <th style="text-align: center;">Free</th>
+                            <th style="text-align: center; color: var(--gold-400);">Professional</th>
+                            <th style="text-align: center;">Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monthly Leads</td>
+                            <td style="text-align:center;">10</td>
+                            <td style="text-align:center;color:var(--gold-400);">200</td>
+                            <td style="text-align:center;">Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Search Filters</td>
+                            <td style="text-align:center;">Basic</td>
+                            <td style="text-align:center;color:var(--gold-400);">Advanced</td>
+                            <td style="text-align:center;">Advanced + AI</td>
+                        </tr>
+                        <tr>
+                            <td>Verified Badge</td>
+                            <td style="text-align:center;color:var(--text-muted);">✗</td>
+                            <td style="text-align:center;color:var(--success);">✓</td>
+                            <td style="text-align:center;color:var(--success);">✓ Premium</td>
+                        </tr>
+                        <tr>
+                            <td>Commission Tracking</td>
+                            <td style="text-align:center;color:var(--text-muted);">✗</td>
+                            <td style="text-align:center;color:var(--success);">✓</td>
+                            <td style="text-align:center;color:var(--success);">✓ Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>Market Analytics</td>
+                            <td style="text-align:center;color:var(--text-muted);">✗</td>
+                            <td style="text-align:center;color:var(--success);">Basic</td>
+                            <td style="text-align:center;color:var(--success);">✓ Full Suite</td>
+                        </tr>
+                        <tr>
+                            <td>Account Manager</td>
+                            <td style="text-align:center;color:var(--text-muted);">✗</td>
+                            <td style="text-align:center;color:var(--text-muted);">✗</td>
+                            <td style="text-align:center;color:var(--success);">✓ Dedicated</td>
+                        </tr>
+                        <tr>
+                            <td>Support Response Time</td>
+                            <td style="text-align:center;">48 hours</td>
+                            <td style="text-align:center;color:var(--gold-400);">12 hours</td>
+                            <td style="text-align:center;">1 hour</td>
+                        </tr>
+                        <tr>
+                            <td>API Access</td>
+                            <td style="text-align:center;color:var(--text-muted);">✗</td>
+                            <td style="text-align:center;color:var(--text-muted);">✗</td>
+                            <td style="text-align:center;color:var(--success);">✓ Full</td>
+                        </tr>
+                        <tr>
+                            <td>Custom Reports</td>
+                            <td style="text-align:center;color:var(--text-muted);">✗</td>
+                            <td style="text-align:center;color:var(--text-muted);">✗</td>
+                            <td style="text-align:center;color:var(--success);">✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Frequently Asked <span class="text-gold">Questions</span></h2>
+                <p class="section-subtitle">Find answers to common questions about our membership plans.</p>
+            </div>
+            <div style="max-width: 720px; margin: 0 auto;">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I switch plans at any time?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Yes! You can upgrade or downgrade your plan at any time. When upgrading, you'll get
+                            immediate access to new features. When downgrading, the change takes effect at the end of
+                            your billing cycle.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is there a free trial for paid plans?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Absolutely! Both Professional and Premium plans come with a 14-day free trial. No credit
+                            card required to start. You can experience all features before making a commitment.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How does the commission system work?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Our commission system is simple and transparent. When you facilitate a successful deal
+                            through our platform, you earn a percentage commission. For Professional members it's 2%,
+                            and for Premium members it's 3%. Commissions are paid out monthly via bank transfer or
+                            PayPal.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What payment methods do you accept?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            We accept all major credit cards (Visa, Mastercard, AmEx), PayPal, wire transfers, and UPI
+                            (for Indian members). Annual plans can also be paid via invoice for enterprise accounts.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What makes the verified leads different?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Every lead on our platform goes through a 5-step verification process: business registration
+                            check, trade history validation, address verification, contact confirmation, and financial
+                            health assessment. This ensures you only connect with genuine, active trade partners.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you offer annual discounts?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Yes! Annual billing saves you 20% compared to monthly payments. Professional annual is
+                            $470/year (save $118) and Premium annual is $1,430/year (save $358). Contact our sales team
+                            for custom enterprise pricing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-sm">
+        <div class="container">
+            <div class="cta-banner animate-on-scroll">
+                <h2>Not Sure Which Plan? <span class="text-gold">Let's Talk.</span></h2>
+                <p>Our trade consultants are here to help you choose the right plan for your business needs.</p>
+                <div class="flex justify-center gap-16">
+                    <a href="contact.html" class="btn btn-gold btn-lg"><i class="fas fa-phone"></i> Talk to Sales</a>
+                    <button class="btn btn-outline btn-lg" onclick="openModal('register')"><i class="fas fa-rocket"></i>
+                        Start Free Trial</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">G</div> Global<span>Trade</span>
+                    </a>
+                    <p>The world's most trusted platform for connecting verified import-export businesses.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Platform</h4><a href="services.html">Services</a><a href="membership.html">Membership</a><a
+                        href="dashboard.html">Dashboard</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4><a href="about.html">About Us</a><a href="#">Careers</a><a
+                        href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4><a href="#">Help Center</a><a href="#">Terms of Service</a><a href="#">Privacy
+                        Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Global Trade Exchange. All rights reserved.</span>
+                <span>Built with <span style="color: var(--gold-400);">♦</span> for global traders</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AUTH MODAL -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3>Welcome Back</h3>
+            <p class="modal-subtitle">Access your Global Trade Exchange account</p>
+            <div class="modal-tabs">
+                <button class="modal-tab active" onclick="switchTab('login')">Login</button>
+                <button class="modal-tab" onclick="switchTab('register')">Register</button>
+            </div>
+            <form id="loginForm" onsubmit="handleAuth(event, 'login')">
+                <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input"
+                        placeholder="you@company.com" required></div>
+                <div class="form-group"><label class="form-label">Password</label><input type="password"
+                        class="form-input" placeholder="Enter password" required></div>
+                <button type="submit" class="btn btn-gold" style="width:100%;">Sign In</button>
+            </form>
+            <form id="registerForm" style="display:none;" onsubmit="handleAuth(event, 'register')">
+                <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-input"
+                        placeholder="John Doe" required></div>
+                <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input"
+                        placeholder="you@company.com" required></div>
+                <div class="form-group"><label class="form-label">Password</label><input type="password"
+                        class="form-input" placeholder="Create password" required></div>
+                <button type="submit" class="btn btn-gold" style="width:100%;">Create Account</button>
+            </form>
+        </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

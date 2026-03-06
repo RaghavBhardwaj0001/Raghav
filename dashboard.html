@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — Global Trade Exchange</title>
+    <meta name="description"
+        content="Manage your trade leads, deals, and commissions from your personalized Global Trade Exchange dashboard.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">G</div> Global<span>Trade</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+                <a href="membership.html">Plans</a><a href="contact.html">Contact</a><a href="dashboard.html"
+                    class="active">Dashboard</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-sm btn-outline" onclick="openModal('login')">Login</button>
+                <button class="btn btn-sm btn-gold" onclick="openModal('register')">Get Started</button>
+                <button class="hamburger" id="hamburgerBtn"
+                    aria-label="Open menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose">&times;</button>
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+        <a href="membership.html">Plans</a><a href="contact.html">Contact</a><a href="dashboard.html">Dashboard</a>
+        <button class="btn btn-gold" onclick="openModal('login')">Login</button>
+    </div>
+
+    <!-- DASHBOARD LAYOUT -->
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar" id="dashSidebar">
+            <div class="sidebar-user">
+                <div class="sidebar-avatar">JD</div>
+                <h4>John Doe</h4>
+                <p>Premium Member</p>
+                <span class="listing-badge badge-premium" style="margin-top: 8px; display: inline-block;">★
+                    Premium</span>
+            </div>
+            <div class="sidebar-menu">
+                <div class="sidebar-label">Main</div>
+                <a href="#" class="sidebar-link active"><i class="fas fa-chart-line"></i> Overview</a>
+                <a href="#" class="sidebar-link"><i class="fas fa-users"></i> My Leads</a>
+                <a href="#" class="sidebar-link"><i class="fas fa-handshake"></i> Active Deals</a>
+                <a href="#" class="sidebar-link"><i class="fas fa-coins"></i> Commissions</a>
+
+                <div class="sidebar-label">Tools</div>
+                <a href="#" class="sidebar-link"><i class="fas fa-magnifying-glass"></i> Search Leads</a>
+                <a href="#" class="sidebar-link"><i class="fas fa-chart-pie"></i> Analytics</a>
+                <a href="#" class="sidebar-link"><i class="fas fa-file-lines"></i> Reports</a>
+                <a href="#" class="sidebar-link"><i class="fas fa-bell"></i> Notifications</a>
+
+                <div class="sidebar-label">Account</div>
+                <a href="#" class="sidebar-link"><i class="fas fa-user-gear"></i> Settings</a>
+                <a href="#" class="sidebar-link"><i class="fas fa-crown"></i> Membership</a>
+                <a href="#" class="sidebar-link"><i class="fas fa-headset"></i> Support</a>
+                <a href="index.html" class="sidebar-link"><i class="fas fa-right-from-bracket"></i> Logout</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <div class="dashboard-header">
+                <div>
+                    <button class="sidebar-toggle" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+                    <h2>Dashboard Overview</h2>
+                    <p class="text-muted" style="font-size: .88rem;">Welcome back, John. Here's your trade summary.</p>
+                </div>
+                <div class="flex gap-8">
+                    <button class="btn btn-sm btn-outline"><i class="fas fa-download"></i> Export</button>
+                    <button class="btn btn-sm btn-gold"><i class="fas fa-plus"></i> New Lead</button>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="dashboard-stats">
+                <div class="dash-stat-card">
+                    <div class="dash-stat-label">Total Leads</div>
+                    <div class="dash-stat-value">2,847</div>
+                    <div class="dash-stat-change positive">↑ 12.5% vs last month</div>
+                </div>
+                <div class="dash-stat-card">
+                    <div class="dash-stat-label">Active Deals</div>
+                    <div class="dash-stat-value">38</div>
+                    <div class="dash-stat-change positive">↑ 8.3% vs last month</div>
+                </div>
+                <div class="dash-stat-card">
+                    <div class="dash-stat-label">Commissions Earned</div>
+                    <div class="dash-stat-value">$18,420</div>
+                    <div class="dash-stat-change positive">↑ 23.1% vs last month</div>
+                </div>
+                <div class="dash-stat-card">
+                    <div class="dash-stat-label">Deal Success Rate</div>
+                    <div class="dash-stat-value">87%</div>
+                    <div class="dash-stat-change negative">↓ 2.1% vs last month</div>
+                </div>
+            </div>
+
+            <!-- Grid: Table + Activity -->
+            <div class="dashboard-grid">
+                <!-- Recent Leads Table -->
+                <div class="dash-panel">
+                    <div class="dash-panel-header">
+                        <h3><i class="fas fa-list text-gold"></i> Recent Leads</h3>
+                        <a href="#" class="btn btn-sm btn-outline">View All</a>
+                    </div>
+                    <div style="overflow-x: auto;">
+                        <table class="dash-table">
+                            <thead>
+                                <tr>
+                                    <th>Company</th>
+                                    <th>Product</th>
+                                    <th>Country</th>
+                                    <th>Value</th>
+                                    <th>Type</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Apex Textiles</strong></td>
+                                    <td>Cotton Fabric</td>
+                                    <td>🇮🇳 India</td>
+                                    <td style="color:var(--gold-400);">$125,000</td>
+                                    <td>Seller</td>
+                                    <td><span class="status status-active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>GreenSteel Corp</strong></td>
+                                    <td>SS304 Sheets</td>
+                                    <td>🇨🇳 China</td>
+                                    <td style="color:var(--gold-400);">$340,000</td>
+                                    <td>Buyer</td>
+                                    <td><span class="status status-pending">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Milano Foods</strong></td>
+                                    <td>Olive Oil</td>
+                                    <td>🇮🇹 Italy</td>
+                                    <td style="color:var(--gold-400);">$78,000</td>
+                                    <td>Seller</td>
+                                    <td><span class="status status-active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>TechElectron Inc</strong></td>
+                                    <td>Semiconductors</td>
+                                    <td>🇰🇷 Korea</td>
+                                    <td style="color:var(--gold-400);">$520,000</td>
+                                    <td>Buyer</td>
+                                    <td><span class="status status-active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Royal Spices</strong></td>
+                                    <td>Cardamom</td>
+                                    <td>🇮🇳 India</td>
+                                    <td style="color:var(--gold-400);">$95,000</td>
+                                    <td>Seller</td>
+                                    <td><span class="status status-pending">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>BuildMaster LLC</strong></td>
+                                    <td>Cement</td>
+                                    <td>🇦🇪 UAE</td>
+                                    <td style="color:var(--gold-400);">$1,200,000</td>
+                                    <td>Buyer</td>
+                                    <td><span class="status status-active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Nordic Timber</strong></td>
+                                    <td>Pine Wood</td>
+                                    <td>🇸🇪 Sweden</td>
+                                    <td style="color:var(--gold-400);">$210,000</td>
+                                    <td>Seller</td>
+                                    <td><span class="status status-closed">Closed</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>PharmaGlobal</strong></td>
+                                    <td>Medical Devices</td>
+                                    <td>🇩🇪 Germany</td>
+                                    <td style="color:var(--gold-400);">$680,000</td>
+                                    <td>Buyer</td>
+                                    <td><span class="status status-active">Active</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Right Panel -->
+                <div>
+                    <!-- Activity -->
+                    <div class="dash-panel" style="margin-bottom: 24px;">
+                        <div class="dash-panel-header">
+                            <h3><i class="fas fa-bolt text-gold"></i> Recent Activity</h3>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-dot gold"></div>
+                            <div>
+                                <div class="activity-text">New lead matched: <strong>BuildMaster LLC</strong> — Cement
+                                    Import</div>
+                                <div class="activity-time">2 hours ago</div>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-dot green"></div>
+                            <div>
+                                <div class="activity-text">Deal closed with <strong>Milano Foods</strong> — $78,000
+                                    Olive Oil</div>
+                                <div class="activity-time">5 hours ago</div>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-dot blue"></div>
+                            <div>
+                                <div class="activity-text">Commission received: <strong>$2,340</strong> from Nordic
+                                    Timber deal</div>
+                                <div class="activity-time">1 day ago</div>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-dot gold"></div>
+                            <div>
+                                <div class="activity-text">New buyer inquiry from <strong>PharmaGlobal</strong>, Germany
+                                </div>
+                                <div class="activity-time">1 day ago</div>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-dot green"></div>
+                            <div>
+                                <div class="activity-text">Verification approved for <strong>Royal Spices Ltd</strong>
+                                </div>
+                                <div class="activity-time">2 days ago</div>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-dot blue"></div>
+                            <div>
+                                <div class="activity-text">Market report available: <strong>Q1 2026 Asia
+                                        Textiles</strong></div>
+                                <div class="activity-time">3 days ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Membership Card -->
+                    <div class="dash-panel">
+                        <div class="dash-panel-header">
+                            <h3><i class="fas fa-crown text-gold"></i> Membership</h3>
+                        </div>
+                        <div style="text-align: center; padding: 12px 0;">
+                            <div class="listing-badge badge-premium"
+                                style="font-size: .85rem; padding: 8px 20px; margin-bottom: 12px;">★ Premium Member
+                            </div>
+                            <p class="text-muted" style="font-size: .85rem; margin-bottom: 4px;">Renews: March 15, 2026
+                            </p>
+                            <p style="font-size: .85rem;">Leads used: <strong
+                                    style="color:var(--gold-400);">Unlimited</strong></p>
+                            <div style="margin-top: 16px;">
+                                <div
+                                    style="background: rgba(212,168,67,.1); border-radius: 20px; height: 8px; overflow: hidden; margin-bottom: 8px;">
+                                    <div
+                                        style="background: var(--gold-gradient); height: 100%; width: 100%; border-radius: 20px;">
+                                    </div>
+                                </div>
+                                <p style="font-size: .78rem; color: var(--text-muted);">Full access — no limits</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Commission Summary -->
+            <div class="dash-panel" style="margin-top: 24px;">
+                <div class="dash-panel-header">
+                    <h3><i class="fas fa-coins text-gold"></i> Commission Summary</h3>
+                    <div class="flex gap-8">
+                        <button class="btn btn-sm btn-outline">This Month</button>
+                        <button class="btn btn-sm btn-outline">This Year</button>
+                    </div>
+                </div>
+                <div class="grid grid-4 gap-16">
+                    <div style="text-align: center; padding: 20px;">
+                        <div
+                            style="font-size: .82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                            Total Earned</div>
+                        <div
+                            style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--gold-400);">
+                            $18,420</div>
+                    </div>
+                    <div style="text-align: center; padding: 20px;">
+                        <div
+                            style="font-size: .82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                            Pending</div>
+                        <div
+                            style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--gold-300);">
+                            $4,250</div>
+                    </div>
+                    <div style="text-align: center; padding: 20px;">
+                        <div
+                            style="font-size: .82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                            Deals This Month</div>
+                        <div
+                            style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--text-primary);">
+                            12</div>
+                    </div>
+                    <div style="text-align: center; padding: 20px;">
+                        <div
+                            style="font-size: .82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                            Avg Deal Size</div>
+                        <div
+                            style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--text-primary);">
+                            $248K</div>
+                    </div>
+                </div>
+                <!-- Chart placeholder -->
+                <div
+                    style="margin-top: 20px; padding: 32px; border: 1px dashed var(--border-color); border-radius: var(--radius-md); text-align: center; color: var(--text-muted);">
+                    <i class="fas fa-chart-area"
+                        style="font-size: 2rem; color: var(--gold-400); margin-bottom: 8px; display: block;"></i>
+                    <p>Commission earnings chart — integrate Chart.js or similar for production</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- AUTH MODAL -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3>Welcome Back</h3>
+            <p class="modal-subtitle">Access your Global Trade Exchange account</p>
+            <div class="modal-tabs">
+                <button class="modal-tab active" onclick="switchTab('login')">Login</button>
+                <button class="modal-tab" onclick="switchTab('register')">Register</button>
+            </div>
+            <form id="loginForm" onsubmit="handleAuth(event, 'login')">
+                <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input"
+                        placeholder="you@company.com" required></div>
+                <div class="form-group"><label class="form-label">Password</label><input type="password"
+                        class="form-input" placeholder="Enter password" required></div>
+                <button type="submit" class="btn btn-gold" style="width:100%;">Sign In</button>
+            </form>
+            <form id="registerForm" style="display:none;" onsubmit="handleAuth(event, 'register')">
+                <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-input"
+                        placeholder="John Doe" required></div>
+                <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input"
+                        placeholder="you@company.com" required></div>
+                <div class="form-group"><label class="form-label">Password</label><input type="password"
+                        class="form-input" placeholder="Create password" required></div>
+                <button type="submit" class="btn btn-gold" style="width:100%;">Create Account</button>
+            </form>
+        </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — Global Trade Exchange</title>
+    <meta name="description"
+        content="Explore our comprehensive suite of global trade services — verified leads, deal matching, commission systems, analytics, and premium support.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">G</div> Global<span>Trade</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="membership.html">Plans</a>
+                <a href="contact.html">Contact</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-sm btn-outline" onclick="openModal('login')">Login</button>
+                <button class="btn btn-sm btn-gold" onclick="openModal('register')">Get Started</button>
+                <button class="hamburger" id="hamburgerBtn"
+                    aria-label="Open menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose">&times;</button>
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+        <a href="membership.html">Plans</a><a href="contact.html">Contact</a><a href="dashboard.html">Dashboard</a>
+        <button class="btn btn-gold" onclick="openModal('login')">Login</button>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Services</span></div>
+        <h1>Our <span class="text-gold">Services</span></h1>
+        <p>Comprehensive trade solutions designed to help you find buyers, close deals, and grow your international
+            business.</p>
+    </section>
+
+    <!-- CORE SERVICES -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label">What We Offer</span>
+                <h2 class="section-title">Core <span class="text-gold">Trade Services</span></h2>
+                <p class="section-subtitle">Everything you need to succeed in the global marketplace, all in one
+                    platform.</p>
+            </div>
+            <div class="grid grid-3 gap-24">
+                <div class="card animate-on-scroll">
+                    <div class="card-icon"><i class="fas fa-user-check"></i></div>
+                    <h3>Verified Trade Leads</h3>
+                    <p>Access our database of 14,700+ verified buyers and sellers. Every lead is manually vetted with
+                        business documents, trade history, and contact verification to ensure you connect with genuine
+                        trade partners.</p>
+                    <div style="margin-top: 20px;">
+                        <span class="listing-tag">Manual Verification</span>
+                        <span class="listing-tag">Real Contacts</span>
+                        <span class="listing-tag">Updated Daily</span>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon"><i class="fas fa-link"></i></div>
+                    <h3>Intelligent Deal Matching</h3>
+                    <p>Our AI-powered matching engine analyzes your requirements, product categories, trade volume, and
+                        preferred regions to find the perfect counterparts — saving you hours of manual searching.</p>
+                    <div style="margin-top: 20px;">
+                        <span class="listing-tag">AI-Powered</span>
+                        <span class="listing-tag">Smart Filters</span>
+                        <span class="listing-tag">Auto-Suggest</span>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon"><i class="fas fa-coins"></i></div>
+                    <h3>Commission-Based Deals</h3>
+                    <p>Earn transparent commissions on every successful deal you facilitate or close. Our escrow-based
+                        system ensures secure transactions and timely payouts for all parties involved.</p>
+                    <div style="margin-top: 20px;">
+                        <span class="listing-tag">Escrow System</span>
+                        <span class="listing-tag">Auto Payouts</span>
+                        <span class="listing-tag">Transparent</span>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Market Analytics & Reports</h3>
+                    <p>Get detailed market intelligence reports, commodity price trends, trade flow data, and
+                        competitive analysis to make informed business decisions across global markets.</p>
+                    <div style="margin-top: 20px;">
+                        <span class="listing-tag">Real-Time Data</span>
+                        <span class="listing-tag">Custom Reports</span>
+                        <span class="listing-tag">Trends</span>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Premium Personal Support</h3>
+                    <p>Premium members get a dedicated account manager who handles lead curation, deal negotiations, and
+                        provides personalized guidance to maximize your trade success.</p>
+                    <div style="margin-top: 20px;">
+                        <span class="listing-tag">Dedicated Manager</span>
+                        <span class="listing-tag">24/7 Priority</span>
+                        <span class="listing-tag">Phone Support</span>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon"><i class="fas fa-ship"></i></div>
+                    <h3>Logistics & Shipping</h3>
+                    <p>Streamline your supply chain with our integrated logistics partners. Get freight quotes, track
+                        shipments, and manage customs documentation — all from your dashboard.</p>
+                    <div style="margin-top: 20px;">
+                        <span class="listing-tag">Freight Quotes</span>
+                        <span class="listing-tag">Tracking</span>
+                        <span class="listing-tag">Customs Docs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADDITIONAL SERVICES -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label">More Solutions</span>
+                <h2 class="section-title">Additional <span class="text-gold">Value-Added Services</span></h2>
+            </div>
+            <div class="grid grid-4 gap-24">
+                <div class="card animate-on-scroll" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 16px;"><i class="fas fa-file-contract"></i></div>
+                    <h4>Trade Documentation</h4>
+                    <p style="font-size: .85rem;">Automated generation of invoices, packing lists, and compliance
+                        documents.</p>
+                </div>
+                <div class="card animate-on-scroll" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 16px;"><i class="fas fa-shield-halved"></i></div>
+                    <h4>Secure Payments</h4>
+                    <p style="font-size: .85rem;">Escrow and LC-based payment protection for safe cross-border
+                        transactions.</p>
+                </div>
+                <div class="card animate-on-scroll" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 16px;"><i class="fas fa-language"></i></div>
+                    <h4>Multi-Language</h4>
+                    <p style="font-size: .85rem;">Platform available in 12 languages for seamless global communication.
+                    </p>
+                </div>
+                <div class="card animate-on-scroll" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 16px;"><i class="fas fa-graduation-cap"></i></div>
+                    <h4>Trade Academy</h4>
+                    <p style="font-size: .85rem;">Free courses and webinars on import-export regulations and best
+                        practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW WE WORK -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label">Process</span>
+                <h2 class="section-title">How Our <span class="text-gold">Platform Works</span></h2>
+                <p class="section-subtitle">A seamless 4-step process to connect you with global trade opportunities.
+                </p>
+            </div>
+            <div class="steps">
+                <div class="step animate-on-scroll">
+                    <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+                    <h4>Sign Up & Verify</h4>
+                    <p>Create your profile, upload business documents, and get your verified badge.</p>
+                </div>
+                <div class="step animate-on-scroll">
+                    <div class="step-icon"><i class="fas fa-filter"></i></div>
+                    <h4>Set Preferences</h4>
+                    <p>Define your product categories, target regions, and trade volume requirements.</p>
+                </div>
+                <div class="step animate-on-scroll">
+                    <div class="step-icon"><i class="fas fa-handshake"></i></div>
+                    <h4>Connect & Negotiate</h4>
+                    <p>Get matched leads and directly connect with verified buyers or sellers.</p>
+                </div>
+                <div class="step animate-on-scroll">
+                    <div class="step-icon"><i class="fas fa-money-bill-trend-up"></i></div>
+                    <h4>Close & Earn</h4>
+                    <p>Finalize deals securely and earn commissions on successful transactions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-sm">
+        <div class="container">
+            <div class="cta-banner animate-on-scroll">
+                <h2>Ready to <span class="text-gold">Scale Your Trade?</span></h2>
+                <p>Get access to verified leads and powerful trade tools. Start with a free account today.</p>
+                <div class="flex justify-center gap-16">
+                    <a href="membership.html" class="btn btn-gold btn-lg"><i class="fas fa-rocket"></i> View Plans</a>
+                    <a href="contact.html" class="btn btn-outline btn-lg"><i class="fas fa-phone"></i> Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">G</div> Global<span>Trade</span>
+                    </a>
+                    <p>The world's most trusted platform for connecting verified import-export businesses.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Platform</h4><a href="services.html">Services</a><a href="membership.html">Membership</a><a
+                        href="dashboard.html">Dashboard</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4><a href="about.html">About Us</a><a href="#">Careers</a><a
+                        href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4><a href="#">Help Center</a><a href="#">Terms of Service</a><a href="#">Privacy
+                        Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Global Trade Exchange. All rights reserved.</span>
+                <span>Built with <span style="color: var(--gold-400);">♦</span> for global traders</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AUTH MODAL -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3>Welcome Back</h3>
+            <p class="modal-subtitle">Access your Global Trade Exchange account</p>
+            <div class="modal-tabs">
+                <button class="modal-tab active" onclick="switchTab('login')">Login</button>
+                <button class="modal-tab" onclick="switchTab('register')">Register</button>
+            </div>
+            <form id="loginForm" onsubmit="handleAuth(event, 'login')">
+                <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input"
+                        placeholder="you@company.com" required></div>
+                <div class="form-group"><label class="form-label">Password</label><input type="password"
+                        class="form-input" placeholder="Enter password" required></div>
+                <button type="submit" class="btn btn-gold" style="width:100%;">Sign In</button>
+            </form>
+            <form id="registerForm" style="display:none;" onsubmit="handleAuth(event, 'register')">
+                <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-input"
+                        placeholder="John Doe" required></div>
+                <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input"
+                        placeholder="you@company.com" required></div>
+                <div class="form-group"><label class="form-label">Password</label><input type="password"
+                        class="form-input" placeholder="Create password" required></div>
+                <button type="submit" class="btn btn-gold" style="width:100%;">Create Account</button>
+            </form>
+        </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

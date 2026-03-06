@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Trade Exchange — Connect Global Buyers & Sellers</title>
+  <meta name="description" content="Global Trade Exchange connects verified import-export buyers and sellers worldwide. Access premium trade leads, commission-based deals, and grow your international business.">
+  <meta name="keywords" content="global trade, import export, buyers sellers, trade leads, international business, B2B marketplace">
+  <meta name="author" content="Global Trade Exchange">
+  <meta property="og:title" content="Global Trade Exchange — Connect Global Buyers & Sellers">
+  <meta property="og:description" content="Your trusted platform for verified global trade leads and commission-based deals.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">G</div>
+        Global<span>Trade</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="membership.html">Plans</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn btn-sm btn-outline" onclick="openModal('login')">Login</button>
+        <button class="btn btn-sm btn-gold" onclick="openModal('register')">Get Started</button>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="membership.html">Plans</a>
+    <a href="contact.html">Contact</a>
+    <a href="dashboard.html">Dashboard</a>
+    <button class="btn btn-gold" onclick="openModal('login')">Login</button>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Trusted by 12,000+ businesses worldwide
+        </div>
+        <h1>Connect with <span class="highlight">Verified Buyers & Sellers</span> Globally</h1>
+        <p class="hero-desc">
+          Global Trade Exchange is the premier platform for import-export professionals. 
+          Access verified trade leads, close commission-based deals, and scale your international business with confidence.
+        </p>
+        <div class="hero-actions">
+          <a href="membership.html" class="btn btn-gold btn-lg">
+            <i class="fas fa-rocket"></i> Start Trading
+          </a>
+          <a href="services.html" class="btn btn-outline btn-lg">
+            <i class="fas fa-play-circle"></i> Explore Services
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="number" data-count="150">0</div>
+            <div class="label">Countries</div>
+          </div>
+          <div class="hero-stat">
+            <div class="number" data-count="8500">0</div>
+            <div class="label">Buyers</div>
+          </div>
+          <div class="hero-stat">
+            <div class="number" data-count="6200">0</div>
+            <div class="label">Sellers</div>
+          </div>
+          <div class="hero-stat">
+            <div class="number" data-count="24000">0</div>
+            <div class="label">Deals Closed</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="hero-float-card">
+            <div class="float-card-header">
+              <div class="float-card-icon green"><i class="fas fa-arrow-trend-up"></i></div>
+              <span class="float-card-title">Monthly Revenue</span>
+            </div>
+            <div class="float-card-value">$2.4M</div>
+            <div class="float-card-meta">↑ 18% from last month</div>
+          </div>
+          <div class="hero-float-card">
+            <div class="float-card-header">
+              <div class="float-card-icon blue"><i class="fas fa-handshake"></i></div>
+              <span class="float-card-title">Active Deals</span>
+            </div>
+            <div class="float-card-value">1,247</div>
+            <div class="float-card-meta">Across 64 countries</div>
+          </div>
+          <div class="hero-float-card">
+            <div class="float-card-header">
+              <div class="float-card-icon gold"><i class="fas fa-shield-halved"></i></div>
+              <span class="float-card-title">Verified Leads</span>
+            </div>
+            <div class="float-card-value">5,830</div>
+            <div class="float-card-meta">99.2% accuracy rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS BAR ========== -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stat-item animate-on-scroll">
+        <div class="stat-number" data-count="150">0+</div>
+        <div class="stat-label">Countries Served</div>
+      </div>
+      <div class="stat-item animate-on-scroll">
+        <div class="stat-number" data-count="14700">0+</div>
+        <div class="stat-label">Active Members</div>
+      </div>
+      <div class="stat-item animate-on-scroll">
+        <div class="stat-number" data-count="24000">0+</div>
+        <div class="stat-label">Deals Closed</div>
+      </div>
+      <div class="stat-item animate-on-scroll">
+        <div class="stat-number" data-count="98">0%</div>
+        <div class="stat-label">Satisfaction Rate</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES PREVIEW ========== -->
+  <section class="section" id="services-preview">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Our Services</span>
+        <h2 class="section-title">Everything You Need to <span class="text-gold">Trade Globally</span></h2>
+        <p class="section-subtitle">We provide end-to-end solutions for importers, exporters, and trade professionals across the globe.</p>
+      </div>
+      <div class="grid grid-3 gap-24">
+        <div class="card animate-on-scroll">
+          <div class="card-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+          <h3>Verified Trade Leads</h3>
+          <p>Access thousands of verified buyer and seller leads from over 150 countries with real contact information.</p>
+        </div>
+        <div class="card animate-on-scroll">
+          <div class="card-icon"><i class="fas fa-handshake-angle"></i></div>
+          <h3>Deal Matching</h3>
+          <p>Our intelligent matching system connects you with the most relevant trade partners based on your requirements.</p>
+        </div>
+        <div class="card animate-on-scroll">
+          <div class="card-icon"><i class="fas fa-percent"></i></div>
+          <h3>Commission System</h3>
+          <p>Earn commissions on every successful deal you facilitate. Our transparent system ensures fair payouts.</p>
+        </div>
+        <div class="card animate-on-scroll">
+          <div class="card-icon"><i class="fas fa-headset"></i></div>
+          <h3>Premium Support</h3>
+          <p>Premium members get dedicated account managers and priority support for their trade operations.</p>
+        </div>
+        <div class="card animate-on-scroll">
+          <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Market Analytics</h3>
+          <p>Get real-time market insights, trade data analytics, and competitive intelligence reports.</p>
+        </div>
+        <div class="card animate-on-scroll">
+          <div class="card-icon"><i class="fas fa-truck-fast"></i></div>
+          <h3>Logistics Support</h3>
+          <p>Simplify your shipping with our integrated logistics partners and freight management tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="section" style="background: var(--bg-secondary);" id="how-it-works">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title">Start <span class="text-gold">Trading</span> in 4 Simple Steps</h2>
+        <p class="section-subtitle">Join thousands of businesses already growing with Global Trade Exchange.</p>
+      </div>
+      <div class="steps">
+        <div class="step animate-on-scroll">
+          <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+          <h4>Create Account</h4>
+          <p>Sign up for free and complete your business profile with trade preferences.</p>
+        </div>
+        <div class="step animate-on-scroll">
+          <div class="step-icon"><i class="fas fa-search"></i></div>
+          <h4>Browse Leads</h4>
+          <p>Search our verified database of buyers and sellers matching your products.</p>
+        </div>
+        <div class="step animate-on-scroll">
+          <div class="step-icon"><i class="fas fa-comments-dollar"></i></div>
+          <h4>Negotiate Deals</h4>
+          <p>Connect directly with verified partners and negotiate trade deals securely.</p>
+        </div>
+        <div class="step animate-on-scroll">
+          <div class="step-icon"><i class="fas fa-trophy"></i></div>
+          <h4>Close & Earn</h4>
+          <p>Finalize deals and earn commissions through our transparent reward system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED LISTINGS ========== -->
+  <section class="section" id="featured-listings">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Featured Listings</span>
+        <h2 class="section-title">Latest <span class="text-gold">Trade Opportunities</span></h2>
+        <p class="section-subtitle">Browse top verified trade leads from across the world. Updated daily.</p>
+      </div>
+      <div class="grid grid-3 gap-24" id="listingsGrid">
+        <!-- Populated by JS -->
+      </div>
+      <div class="text-center" style="margin-top: 48px;">
+        <a href="dashboard.html" class="btn btn-outline">View All Listings <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MEMBERSHIP CTA ========== -->
+  <section class="section" style="background: var(--bg-secondary);" id="membership-preview">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Membership Plans</span>
+        <h2 class="section-title">Choose Your <span class="text-gold">Growth Plan</span></h2>
+        <p class="section-subtitle">From free access to premium advantages — we have a plan for every trader.</p>
+      </div>
+      <div class="grid grid-3 gap-24">
+        <!-- Free -->
+        <div class="pricing-card animate-on-scroll">
+          <div class="pricing-label">Free</div>
+          <div class="pricing-price">$0 <span class="period">/ forever</span></div>
+          <p class="pricing-desc">Get started with basic trade features.</p>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> 10 leads per month</li>
+            <li><span class="check">✓</span> Basic search filters</li>
+            <li><span class="check">✓</span> Community forum access</li>
+            <li><span class="cross">✗</span> Verified badge</li>
+            <li><span class="cross">✗</span> Priority support</li>
+            <li><span class="cross">✗</span> Market analytics</li>
+          </ul>
+          <a href="membership.html" class="btn btn-outline" style="width: 100%;">Get Started</a>
+        </div>
+        <!-- Pro -->
+        <div class="pricing-card featured animate-on-scroll">
+          <div class="pricing-popular">Most Popular</div>
+          <div class="pricing-label">Professional</div>
+          <div class="pricing-price"><span class="currency">$</span>49 <span class="period">/ month</span></div>
+          <p class="pricing-desc">For serious traders and growing businesses.</p>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> 200 leads per month</li>
+            <li><span class="check">✓</span> Advanced search & filters</li>
+            <li><span class="check">✓</span> Verified business badge</li>
+            <li><span class="check">✓</span> Commission tracking</li>
+            <li><span class="check">✓</span> Email support</li>
+            <li><span class="cross">✗</span> Dedicated account manager</li>
+          </ul>
+          <a href="membership.html" class="btn btn-gold" style="width: 100%;">Upgrade Now</a>
+        </div>
+        <!-- Premium -->
+        <div class="pricing-card animate-on-scroll">
+          <div class="pricing-label">Premium</div>
+          <div class="pricing-price"><span class="currency">$</span>149 <span class="period">/ month</span></div>
+          <p class="pricing-desc">Unlimited access with personal support.</p>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Unlimited leads</li>
+            <li><span class="check">✓</span> AI-powered matching</li>
+            <li><span class="check">✓</span> Premium verified badge</li>
+            <li><span class="check">✓</span> Full market analytics</li>
+            <li><span class="check">✓</span> Dedicated account manager</li>
+            <li><span class="check">✓</span> Priority phone support</li>
+          </ul>
+          <a href="membership.html" class="btn btn-outline" style="width: 100%;">Go Premium</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title">What Our <span class="text-gold">Members Say</span></h2>
+        <p class="section-subtitle">Real success stories from traders who grew their business with us.</p>
+      </div>
+      <div class="grid grid-3 gap-24">
+        <div class="testimonial-card animate-on-scroll">
+          <p class="testimonial-text">Global Trade Exchange helped us find verified steel suppliers in Asia within the first week. We've closed over $2M in deals through the platform.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RK</div>
+            <div>
+              <div class="testimonial-name">Rajesh Kumar</div>
+              <div class="testimonial-role">CEO, SteelMax India</div>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <p class="testimonial-text">The commission system is incredibly transparent. As a trade broker, I've earned consistent commissions and grown my network significantly.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SM</div>
+            <div>
+              <div class="testimonial-name">Sarah Mitchell</div>
+              <div class="testimonial-role">Trade Consultant, UK</div>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <p class="testimonial-text">Premium membership was a game-changer. The dedicated account manager and market analytics helped us expand into 12 new countries.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">LW</div>
+            <div>
+              <div class="testimonial-name">Li Wei</div>
+              <div class="testimonial-role">Director, Dragon Exports</div>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER ========== -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="cta-banner animate-on-scroll">
+        <h2>Ready to <span class="text-gold">Go Global?</span></h2>
+        <p>Join 14,700+ businesses already trading on the world's most trusted platform. Start for free today.</p>
+        <div class="flex justify-center gap-16">
+          <a href="membership.html" class="btn btn-gold btn-lg"><i class="fas fa-rocket"></i> Start Free Trial</a>
+          <a href="contact.html" class="btn btn-outline btn-lg"><i class="fas fa-phone"></i> Talk to Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">G</div>
+            Global<span>Trade</span>
+          </a>
+          <p>The world's most trusted platform for connecting verified import-export businesses. Trade smarter, trade global.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email" id="newsletterEmail">
+            <button class="btn btn-gold btn-sm" onclick="subscribeNewsletter()">Subscribe</button>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="services.html">Services</a>
+          <a href="membership.html">Membership</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="#">Trade Leads</a>
+          <a href="#">Analytics</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+          <a href="#">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Documentation</a>
+          <a href="#">API Reference</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Global Trade Exchange. All rights reserved.</span>
+        <span>Built with <span style="color: var(--gold-400);">♦</span> for global traders</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== AUTH MODAL ========== -->
+  <div class="modal-overlay" id="authModal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <h3>Welcome Back</h3>
+      <p class="modal-subtitle">Access your Global Trade Exchange account</p>
+      <div class="modal-tabs">
+        <button class="modal-tab active" onclick="switchTab('login')">Login</button>
+        <button class="modal-tab" onclick="switchTab('register')">Register</button>
+      </div>
+      <!-- Login Form -->
+      <form id="loginForm" onsubmit="handleAuth(event, 'login')">
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" placeholder="you@company.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-input" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn btn-gold" style="width: 100%;">Sign In</button>
+      </form>
+      <!-- Register Form -->
+      <form id="registerForm" style="display:none;" onsubmit="handleAuth(event, 'register')">
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-input" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Company Name</label>
+          <input type="text" class="form-input" placeholder="Acme Trading Co.">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" placeholder="you@company.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-input" placeholder="Create a password" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">I am a</label>
+          <select class="form-input">
+            <option value="">Select your role</option>
+            <option value="buyer">Buyer / Importer</option>
+            <option value="seller">Seller / Exporter</option>
+            <option value="broker">Trade Broker</option>
+            <option value="both">Both Buyer & Seller</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-gold" style="width: 100%;">Create Account</button>
+      </form>
+      <div class="modal-divider">or</div>
+      <button class="btn btn-outline" style="width: 100%;"><i class="fab fa-google"></i> Continue with Google</button>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
