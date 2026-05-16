@@ -1,0 +1,28 @@
+{
+  "name": "primary",
+  "version": "1.0.0",
+  "description": "A modern, responsive website for a global import-export business platform that connects verified buyers and sellers worldwide.",
+  "main": "main.js",
+  "scripts": {
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaghavBhardwaj0001/Raghav.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaghavBhardwaj0001/Raghav/issues"
+  },
+  "homepage": "https://github.com/RaghavBhardwaj0001/Raghav#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  },
+  "devDependencies": {
+    "vite": "^8.0.2"
+  }
+}
